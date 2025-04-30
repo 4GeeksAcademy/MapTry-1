@@ -18,7 +18,7 @@ pronombres.forEach(pronom => {
       domin.forEach(dominio=>{      
         let nombreDominio = `${pronom}${adjetivos}${sustantivos}`;
 
-        // Si el sustantivo termina con el TLD
+        // Si el sustantivo termina con el Dominio
         if (sustantivos.endsWith(dominio)) {
             const nuevoSustantivo = sustantivos.slice(0, -dominio.length);
             nombreDominio = `${pronom}${adjetivos}${nuevoSustantivo}`;
